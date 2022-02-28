@@ -1,0 +1,104 @@
+               <!--  PAGE 1 -->
+ <!DOCTYPE html>
+<html>
+  <title>election</title>
+<head>
+  <!--  <meta property='og:locale' content='en_us' >
+    <meta property='og:title' content='Election Polling'>
+    <meta property='og:type'  content='Politics'>
+    <meta name='Keywords' content='election'Polling'vote'>
+    <meta name='robots' content='noindex'nosnippet'nocache'>
+    <meta property='og:site_name' content='TN_Election'>
+    <meta property='og:description' content='TamilNadu Advance Election Polling in Digital'>
+    <meta name='viewport' content='width=device-width' initial-scale=1.0'>   -->
+</head>
+<style>
+    #login{
+       float:right;
+       display:relative;
+       position:relative ;
+       background-image:"img/TN.jpg";
+    }
+    #formm{
+      display:none;
+      float:right;
+      height:370px;
+      width:500px;
+      margin-top:40px;
+      margin-right:-40px;
+      text-align:center;
+      background-color:lightgreen;
+      border:4px ridge lightgreen;
+      
+    }
+    #close{
+      color:#ea2528;
+    } 
+    #sub{
+      color:blue;
+    }
+    #note{
+      color:darkgreen;
+      font-size:12px;
+    }
+    input[placeholder]{opacity: 0.4;}
+    img{
+      width: 100%;
+      height: 95%;
+      opacity: 0.5;
+      position:absolute;
+      margin-top: 1px 1px;
+      z-index: -1;
+    }
+   
+</style>
+
+  <body>
+    <!-- <src><img src="img/vote.jpg"> -->
+    <div id='login'>
+     
+      
+      <button onclick='login()'>login</button>
+      <button onclick="location.href='res.php' ">Result</button>  <!-- <a href='res.php'>Result</a> -->
+      <!-- <button onclick="location.replace('https://wa.me/916383746364')">Result</button> -->
+    </div>
+      <form action='/reg.php' method='post' id='formm' required>
+            <h4 id='log'>LOGIN</h4>
+         <label for='name' required>NAME &emsp; &ensp; &ensp; &ensp;:</label> 
+          <input type='text' name='name' placeholder='SHIVA.N' required> </br></br>
+
+         <label for='adno'>AADHAR NO &nbsp;:</label>
+          <input type='text' name='adno' placeholder='1234 5678 9012' required></br></br>
+
+         <label for='voteid'>VOTER ID&ensp; &nbsp; &ensp;:</label>
+           <input type='text' name='voteid' placeholder='ABC0987657' required></br></br>
+
+         <label for='phno'>MOBILE NO &ensp; :</label>
+          <input type='tel' name='phno' placeholder='1234567890' required></br></br>
+
+         <label for='wardno'>WARD NO &ensp; &ensp; :</label>
+          <input type='text' name='wardno' placeholder='12' required></span> </br></br>
+
+         <label for='area'>CONSITUENCY:</label>
+          <input type='text' name='area' placeholder='ex nagar' required></br></br>
+
+         <label for='footno'>CONSIT NO &emsp; &nbsp;:</label>
+          <input type='text' name='footno' placeholder='111' required></br><hr></hr>
+
+          <input type='submit' id='sub' value="submit" onclick="location.href='reg.php' ">
+
+          <button id="close" onclick="location.href='home.html'">close</button> </br>
+          <note id="note">note*:GIVE THE DETAILS ABOVE THE FORMAT.*ALL LETTERS ARE CAPITIAL</note>
+
+      </form>
+      <src><img src="img/vote.jpg">
+  </body>
+<script>
+  function login(){
+   document.getElementById('formm').style.display='block';
+  }
+  // function goto(){
+  //   location.replace("reg.php");
+  // }
+</script>
+</html>
